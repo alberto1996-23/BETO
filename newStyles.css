@@ -1,0 +1,92 @@
+
+
+h2 {
+    text-align: right;
+    font-family: 'Unbounded', cursive;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    padding-right: 20%;
+    padding-top: 5%;
+    text-decoration: underline;
+}
+
+nav {
+    background-color: grey;
+}
+
+#opening {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 79px;
+    border-bottom: 2px dotted;
+}
+
+#mission {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 79px;
+    border-bottom: 2px dotted;
+}
+
+.card {
+    width: 45%;
+    border: none;
+}
+
+.left {
+    float: left;
+    margin-left: 30px
+} 
+
+.right {
+    float: right;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+.tab-1 {
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: underline;
+    font-family: 'Unbounded', cursive;
+    font-size: 2.4rem;
+}
+
+.nav-tag-header {
+    text-align: center;
+    padding-top: 55px;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: cursive;
+    margin-left: 3%;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.myFace {
+    float: left;
+    padding-left: 15px;
+    padding-right: 10px;
+    width: 30%;
+    height: 30%;
+    border-radius: 5px;
+}
+
+.opening-content {
+    position: relative;
+    padding-left: 25px;
+    padding-right: 15px;
+}
