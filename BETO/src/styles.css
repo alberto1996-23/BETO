@@ -1,0 +1,123 @@
+@media (min-width: 800px) {
+
+    .interest-content {
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+    }
+
+}
+
+body {
+    background-color: #8E3E63;
+}
+
+h1, p {
+    color: black;
+    line-height: 1.8em;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    font-family: 'Unbounded', cursive;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    padding-right: 20%;
+    padding-top: 5%;
+    text-decoration: underline;
+}
+
+nav {
+    background-color: #65B741;
+}
+
+#opening {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 79px;
+}
+
+#interests {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 79px;
+}
+
+#mission {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 79px;
+}
+
+.opening-content {
+    position: relative;
+    padding-left: 25px;
+    padding-right: 15px;
+}
+
+.interest-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 7%;
+    gap: 5rem;
+}
+
+.mission-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-right: 2%;
+}
+
+.contact-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
+}
+
+.section-header {
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: underline;
+    font-family: 'Unbounded', cursive;
+    font-size: 2.4rem;
+}
+
+.mission-statement {
+    margin-left: 20px;
+}
+
+.nav-tag-header {
+    text-align: center;
+    padding-top: 55px;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: cursive;
+    margin-left: 3%;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.myFace {
+    float: left;
+    padding-left: 2px;
+    padding-right: 30px;
+    width: 27%;
+    height: 28%;
+    border-radius: 5px;
+}
