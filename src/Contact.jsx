@@ -1,6 +1,7 @@
 import ScrollFade from "./ScrollFade";
 import linkedInImage from "./assets/linkedin-logo.webp";
 import handshakeImage from "./assets/handshake-logo.jpg";
+import githubImage from "./assets/github-logo.png";
 
 const contacts = [
   {
@@ -15,6 +16,12 @@ const contacts = [
     href: "https://depaul.joinhandshake.com/profiles/fe622u",
     text: "I also can be found on Handshake at Alberto Williams.",
   },
+  {
+    title: "GitHub",
+    image: githubImage,
+    href: "https://github.com/alberto1996-23",
+    text: "I also can be found on GitHub at alberto1996-23."
+  }
 ];
 
 function Contact() {
