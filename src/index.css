@@ -1,0 +1,393 @@
+@import "tailwindcss";
+
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-section {
+  min-height: 100vh;
+  color: #ffffff;
+  padding: 6rem 1.5rem;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
+  margin-bottom: 5rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem;
+  align-items: start;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-card-shift {
+  margin-top: 10rem;
+}
+
+.contact-card-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.contact-image-link {
+  display: inline-block;
+}
+
+.contact-image-frame {
+  width: 180px;
+  height: 180px;
+  background: transparent;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-image {
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
+  display: block;
+}
+
+.contact-card-text {
+  font-size: 1.2rem;
+  line-height: 1.35;
+  margin-top: 1rem;
+  max-width: 320px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation-name: fadeInFromTop;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.fade-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.fade-delay-2 {
+  animation-delay: 0.7s;
+}
+
+.fade-delay-3 {
+  animation-delay: 1.2s;
+}
+
+.fade-delay-4 {
+  animation-delay: 1.7s;
+}
+
+.fade-delay-5 {
+  animation-delay: 2.2s;
+}
+
+.language-card {
+  position: relative;
+  min-height: 250px;
+  border-radius: 18px;
+
+  /* Removes the visible outline/border */
+  border: none;
+
+  background: black;
+  overflow: hidden;
+  cursor: default;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.language-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+
+  background: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(255, 255, 255, 0.18),
+    rgba(120, 120, 120, 0.08),
+    transparent 45%
+  );
+
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.language-card::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 16px;
+  background: black;
+  z-index: 1;
+}
+
+.language-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 24px rgba(255, 255, 255, 0.16);
+}
+
+
+.language-card:hover::before {
+  opacity: 1;
+}
+
+.language-logo {
+  position: relative;
+  z-index: 1;
+
+  width: 170px;
+  height: 170px;
+
+  object-fit: contain;
+  display: block;
+}
+
+.language-card {
+  z-index: 1;
+}
+
+.language-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-card {
+  isolation: isolate;
+}
+
+.language-card {
+  background-clip: padding-box;
+}
+
+.language-card {
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.08);
+}
+
+.language-card:hover {
+  box-shadow: 0 0 26px rgba(255, 255, 255, 0.18);
+}
+
+.language-card {
+  pointer-events: auto;
+}
+
+.language-card::after {
+  pointer-events: none;
+}
+
+.language-card::before {
+  pointer-events: none;
+}
+
+.language-card {
+  color: transparent;
+}
+
+.language-card::selection {
+  background: transparent;
+}
+
+.language-card {
+  text-shadow: none;
+}
+
+.language-card {
+  --card-text-color: white;
+}
+
+.language-card {
+  font-family: inherit;
+}
+
+.language-card {
+  appearance: none;
+}
+
+.language-card {
+  outline: none;
+}
+
+.language-card:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.7);
+  outline-offset: 4px;
+}
+
+.language-card {
+  color: white;
+}
+
+.language-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes scrollFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(35px);
+}
+
+.scroll-fade-show {
+  animation-name: scrollFadeIn;
+  animation-duration: 0.85s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: var(--fade-delay, 0s);
+}
+
+.project-card {
+  width: 100%;
+  min-height: 280px;
+  padding: 2rem;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  box-shadow: 0 0 24px rgba(255, 255, 255, 0.08);
+}
+
+.project-card-image-left {
+  flex-direction: row;
+}
+
+.project-card-image-right {
+  flex-direction: row-reverse;
+}
+
+.project-image-box {
+  width: 500px;
+  height: 300px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.project-image-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.project-info {
+  max-width: 650px;
+  text-align: center;
+}
+
+.project-info h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project-info p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgb(209, 213, 219);
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contact-card-shift {
+    margin-top: 0;
+  }
+
+  .contact-title {
+    margin-bottom: 3rem;
+  }
+
+  .contact-card-text {
+    font-size: 1.25rem;
+  }
+
+  .project-card,
+  .project-card-image-left,
+  .project-card-image-right {
+    flex-direction: column;
+    border-radius: 40px;
+    padding: 2rem 1.5rem;
+  }
+
+  .project-image-box {
+    width: 150px;
+    height: 150px;
+  }
+
+  .project-info h3 {
+    font-size: 1.7rem;
+  }
+
+  .project-info p {
+    font-size: 1rem;
+  }
+}
